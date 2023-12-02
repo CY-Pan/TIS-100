@@ -1,0 +1,45 @@
+@0
+
+
+@1
+MOV UP,ACC
+LP:MOV ACC,DOWN
+MOV ACC,DOWN
+JEZ BK
+SUB 1
+JMP LP
+BK:
+
+@2
+
+
+@3
+
+
+@4
+MOV 0,ACC
+SAV
+LP:MOV UP,ACC
+JEZ BK
+SWP
+ADD UP
+SAV
+JMP LP
+BK:MOV UP,NIL
+SWP
+MOV ACC,DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV UP,DOWN
+
+@9
+
